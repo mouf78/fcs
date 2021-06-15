@@ -1,0 +1,286 @@
+body {
+  padding: 0;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+/*--- navigation bar ---*/
+.navbar {
+  /* background: transparent; */
+  position: absolute;
+  background-color: #fff;
+  font-family: "Bell MT";
+}
+
+.navbar ul {
+  /* border-radius: 7px; */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link {
+  margin: 0 20px;
+  font-size: 1em;
+}
+
+.nav-item {
+  margin: 0 20px;
+  font-size: 1.5em;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  font-size: 1em;
+}
+
+#menuitem {
+  color: rgb(10, 10, 119);
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: ;
+}
+
+#menuitem :hover {
+  color: rgb(10, 10, 119);
+  font-size: 1.7em;
+}
+
+.navbar :not(.logo) :hover {
+  background-color: rgba(255, 255, 255, 1);
+  /* background: #f0e371; */
+  border-radius: 5px;
+}
+
+/*set background*/
+.header {
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0;
+}
+
+.description {
+  position: relative;
+}
+
+/*make background stylish*/
+/* .overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(241, 235, 235, 0.2);
+} */
+
+/*address text*/
+/* .description {
+    left: 20%;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+} */
+/* #hdr1{
+    color:rgb(243, 180, 8);
+} */
+
+#titlelable {
+  color: rgb(17, 17, 20);
+  /* color: rgb(7, 9, 131); */
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: "Bell MT";
+  font-size: 4em;
+  font-weight: bolder;
+  /* margin-left: 90px; */
+  /* margin-left: 8%; */
+}
+
+#slogan {
+  color: rgb(17, 17, 20);
+  font-size: 3rem;
+  font-family: "Bell MT";
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+#tellb {
+  font-family: "Bell MT";
+  color: red;
+  margin-left: 47%;
+  margin-top: 2%;
+  font-weight: bolder;
+}
+
+#tellb:hover {
+  background-color: red;
+  color: #fff;
+}
+
+#sectitle {
+  margin: 20px 0;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: tomato;
+}
+
+#subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(28, 32, 80);
+}
+
+/* 
+    .description h3 {
+        color: rgb(6, 1, 20);
+        font-family: 'Bell MT';
+    }
+
+/*sections' Style*/
+/* .features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+} */
+
+/* .feature-title {
+    color: rgb(241, 154, 154);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+} */
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.features .btn:hover {
+  background-color: red;
+  border: 1px solid #333;
+}
+
+#footer {
+  background-color: rgb(15, 5, 70);
+  padding: 20px;
+  color: rgb(213, 235, 155);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+}
+
+.fa:hover {
+  color: #fff;
+}
+
+#footer ul {
+  display: block;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer ul li a:hover {
+  text-decoration: none;
+  color: rgb(32, 19, 211);
+}
+
+#footer img {
+  height: 150px;
+  width: 150px;
+  border-radius: 7px;
+}
+
+img:hover {
+  opacity: 70%;
+}
+
+/* make header responsive in small screens  */
+@media (min-width: 0px) and (max-width: 561px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 8px;
+  }
+  .description {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-items: center;
+    font-size: 2em;
+    position: absolute;
+    /* margin: 20px; */
+    /* padding: 0; */
+  }
+  #titlelable {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    font-size: 4em;
+    margin-top: auto;
+    bottom: 2.5em;
+  }
+  #slogan {
+    /* position: absolute; */
+    /* display: flex; */
+    display: none;
+  }
+  #tellb {
+    position: absolute;
+    /* font-size: 1em; */
+    margin-left: 8em;
+    /* bottom: 1em; */
+  }
+  img {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+.footer {
+  background-color: rgb(4, 83, 156);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font: 1em sans-serif;
+  height: 3em;
+}
+
+#gmap_canvas {
+  margin-top: 30px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+#footer1 {
+  margin-left: 2%;
+}
