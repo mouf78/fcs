@@ -52,21 +52,22 @@ body {
 }
 
 /* .navbar :not(.logo) :hover {
-  /* background-color: rgba(255, 255, 255, 1); */
+    /* background-color: rgba(255, 255, 255, 1); */
 /* background: #f0e371; */
 /* border-radius: 5px; }*/
 
 /*set background*/
 .header {
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url("img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("img/services.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 0;
+  /* margin: auto; */
   /* background-attachment: fixed; */
-  height: 90vh;
+  /* height: 90vh; */
+  /* height: 20%; */
 }
 
 #titlelable {
@@ -78,106 +79,19 @@ body {
   font-size: 60px;
 }
 
-.description p {
+#servicesTitle {
+  position: relative;
   width: 100%;
   font-family: "Times New Roman", Times, serif;
   color: #fff;
-  font-size: 60px;
+  font-size: 100px;
   /* position: absolute; */
-  margin-top: 60%;
+  margin-top: 90%;
   max-width: 1140px;
   margin-left: 120%;
 }
-#slogan2 {
-  width: 80%;
-  font-family: "Times New Roman", Times, serif;
-  color: #fff;
-  font-size: 50px;
-  position: absolute;
-  margin-top: 300px;
-  max-width: 1140px;
-  margin-left: 99px;
-}
-
-/*make background stylish*/
-/* .overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(241, 235, 235, 0.2);
-} */
-
-/*address text*/
-/* .description {
-    left: 20%;
-    position: absolute;
-    top: 35%;
-    transform: translate(-50%, -55%);
-    text-align: center;
-} */
-/* #hdr1{
-    color:rgb(243, 180, 8);
-} */
-
-/* #slogan {
-  /* color: rgb(17, 17, 20);
-  font-size: 3rem;
-  font-family: "Bell MT";
-  margin-left: 40%;
-  margin-top: 17%;
-} */
-
-#tellb {
-  font-family: "Bell MT";
-  color: red;
-  margin-left: 47%;
-  margin-top: 2%;
-  font-weight: bolder;
-}
-
-#tellb:hover {
-  /* background-color: red; */
-  color: #fff;
-}
-
-#sectitle {
-  margin: 20px 0;
-  font-size: 24px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: tomato;
-}
-
-#subtitle {
-  margin: 20px 0;
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(28, 32, 80);
-}
 
 /* 
-    .description h3 {
-        color: rgb(6, 1, 20);
-        font-family: 'Bell MT';
-    }
-
-/*sections' Style*/
-/* .features {
-    margin: 4em auto;
-    padding: 1em;
-    position: relative;
-} */
-
-/* .feature-title {
-    color: rgb(241, 154, 154);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
-} */
-
 .features img {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -202,7 +116,7 @@ body {
   background-color: rgb(15, 5, 70);
   padding: 20px;
   color: rgb(213, 235, 155);
-}
+} */
 
 .fa {
   padding: 20px;
@@ -278,6 +192,21 @@ img:hover {
 }
 /* media quireies  */
 /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 468px) and (max-width: 992px) {
+  #servicesTitle {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 50px;
+    /* position: absolute; */
+    margin-top: 170%;
+    /* max-width: 1140px; */
+    margin-left: 80%;
+  }
+}
+
 @media (min-width: 576px) {
   .mapouter {
     position: relative;
@@ -326,6 +255,30 @@ img:hover {
     height: 300px;
     width: 760px;
   }
+  #servicesTitle {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 50px;
+    /* position: absolute; */
+    margin-top: 190%;
+    max-width: 1140px;
+    margin-left: 60%;
+  }
+  #servicesTitle {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 10px;
+    /* position: absolute; */
+    margin-top: 190%;
+    max-width: 1140px;
+    margin-left: 30%;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -349,6 +302,18 @@ img:hover {
   }
   #slogan {
     display: none;
+  }
+  #servicesTitle {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 10px;
+    /* position: absolute; */
+    margin-top: 190%;
+    max-width: 1140px;
+    margin-left: 30%;
   }
 }
 
@@ -375,6 +340,18 @@ img:hover {
     margin-top: 60%;
     max-width: 1140px;
     margin-left: 120%;
+  }
+  #servicesTitle {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 60px;
+    /* position: absolute; */
+    margin-top: 190%;
+    max-width: 1140px;
+    margin-left: 30%;
   }
 }
 
