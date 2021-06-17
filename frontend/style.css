@@ -3,30 +3,34 @@ body {
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 /*--- navigation bar ---*/
 .navbar {
-  /* background: transparent; */
+  background: transparent;
   position: absolute;
-  background-color: #fff;
+
+  /* background-color: #fff; */
   font-family: "Bell MT";
 }
 
-.navbar ul {
-  /* border-radius: 7px; */
-  background-color: rgba(255, 255, 255, 0.5);
+.navbar-toggler {
+  background-color: red;
+  color: #fff;
+  border: #fff;
+  height: 25px;
+  width: 30px;
 }
 
 .nav-link {
-  margin: 0 20px;
+  margin: 0 15px;
   font-size: 1em;
 }
 
 .nav-item {
-  margin: 0 20px;
+  margin: 0 15px;
   font-size: 1.5em;
 }
 
@@ -36,34 +40,62 @@ body {
 }
 
 #menuitem {
-  color: rgb(10, 10, 119);
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 1.2em;
   font-weight: 700;
-  font-family: ;
+  font-family: "bell mt";
 }
 
-#menuitem :hover {
-  color: rgb(10, 10, 119);
-  font-size: 1.7em;
+#menuitem:hover {
+  color: yellow;
+  font-size: 1.5em;
 }
 
-.navbar :not(.logo) :hover {
-  background-color: rgba(255, 255, 255, 1);
-  /* background: #f0e371; */
-  border-radius: 5px;
-}
+/* .navbar :not(.logo) :hover {
+  /* background-color: rgba(255, 255, 255, 1); */
+/* background: #f0e371; */
+/* border-radius: 5px; }*/
 
 /*set background*/
 .header {
-  background-image: url("img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("img/bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   margin: 0;
+  /* background-attachment: fixed; */
+  height: 90vh;
 }
 
-.description {
-  position: relative;
+#titlelable {
+  margin: 0;
+  padding: 0 50px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.description p {
+  width: 40%;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  margin-top: 20%;
+  max-width: 1140px;
+  margin-left: 35%;
+}
+#slogan2 {
+  width: 80%;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 300px;
+  max-width: 1140px;
+  margin-left: 99px;
 }
 
 /*make background stylish*/
@@ -88,25 +120,13 @@ body {
     color:rgb(243, 180, 8);
 } */
 
-#titlelable {
-  color: rgb(17, 17, 20);
-  /* color: rgb(7, 9, 131); */
-  margin-top: 1%;
-  margin-left: 2%;
-  font-family: "Bell MT";
-  font-size: 4em;
-  font-weight: bolder;
-  /* margin-left: 90px; */
-  /* margin-left: 8%; */
-}
-
-#slogan {
-  color: rgb(17, 17, 20);
+/* #slogan {
+  /* color: rgb(17, 17, 20);
   font-size: 3rem;
   font-family: "Bell MT";
   margin-left: 40%;
-  margin-top: 20%;
-}
+  margin-top: 17%;
+} */
 
 #tellb {
   font-family: "Bell MT";
@@ -117,7 +137,7 @@ body {
 }
 
 #tellb:hover {
-  background-color: red;
+  /* background-color: red; */
   color: #fff;
 }
 
@@ -189,11 +209,13 @@ body {
   width: 50px;
   text-align: center;
   text-decoration: none;
+  color: #fff;
   /* margin: 5px 2px; */
 }
 
 .fa:hover {
-  color: #fff;
+  color: rgb(63, 4, 224);
+  font-size: 20px;
 }
 
 #footer ul {
@@ -222,49 +244,7 @@ img:hover {
   opacity: 70%;
 }
 
-/* make header responsive in small screens  */
-@media (min-width: 0px) and (max-width: 561px) {
-  .header {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    font-size: 8px;
-  }
-  .description {
-    display: flex;
-    color: #fff;
-    align-items: center;
-    justify-items: center;
-    font-size: 2em;
-    position: absolute;
-    /* margin: 20px; */
-    /* padding: 0; */
-  }
-  #titlelable {
-    position: absolute;
-    display: flex;
-    color: #fff;
-    font-size: 4em;
-    margin-top: auto;
-    bottom: 2.5em;
-  }
-  #slogan {
-    /* position: absolute; */
-    /* display: flex; */
-    display: none;
-  }
-  #tellb {
-    position: absolute;
-    /* font-size: 1em; */
-    margin-left: 8em;
-    /* bottom: 1em; */
-  }
-  img {
-    width: 450px;
-    height: 300px;
-  }
-}
-
+/* ==========  */
 .footer {
   background-color: rgb(4, 83, 156);
   display: flex;
@@ -283,4 +263,126 @@ img:hover {
 }
 #footer1 {
   margin-left: 2%;
+}
+
+.logofooter {
+  height: 150px;
+  width: 150px;
+}
+
+.fpage {
+  width: 350px;
+  height: 300px;
+  /* margin-left: 50px; */
+}
+/* media quireies  */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+  }
+  #slogan {
+    display: none;
+  }
+  .fpage {
+    width: 350px;
+    height: 300px;
+    /* margin-left: 50px; */
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+  }
+
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 769 px) and (max-width: 991px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #slogan {
+    display: none;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mapouter {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mapouter {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+}
+
+#newfooter {
+  bottom: 15%;
+  background-color: #060764;
+  padding: 2%;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .fpage {
+    height: 300px;
+    width: 330px;
+  }
 }
