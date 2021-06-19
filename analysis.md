@@ -22,12 +22,15 @@ Create Blog Project
 
         Projects (what we do):
             -title
+            -Duration
+            -Location
             -photo
             -discreption
             -photos
 
 
-
+        about:
+            -
 
 
 
