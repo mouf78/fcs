@@ -1,0 +1,409 @@
+body {
+  padding: 0;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background: transparent;
+  position: absolute;
+
+  /* background-color: #fff; */
+  font-family: "Bell MT";
+}
+
+.navbar-toggler {
+  background-color: red;
+  color: #fff;
+  border: #fff;
+  height: 25px;
+  width: 30px;
+}
+
+.nav-link {
+  margin: 0 15px;
+  font-size: 1em;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-size: 1.5em;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  font-size: 1em;
+}
+
+#menuitem {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "bell mt";
+}
+
+#menuitem:hover {
+  color: yellow;
+  /* font-size: 1.5em; */
+}
+
+/* .navbar :not(.logo) :hover {
+  /* background-color: rgba(255, 255, 255, 1); */
+/* background: #f0e371; */
+/* border-radius: 5px; }*/
+
+/*set background*/
+.header {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0;
+  /* background-attachment: fixed; */
+  height: 90vh;
+}
+
+#titlelable {
+  margin: 0;
+  padding: 0 50px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.description p {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 60px;
+  /* position: absolute; */
+  margin-top: 60%;
+  max-width: 1140px;
+  margin-left: 120%;
+}
+#slogan2 {
+  width: 80%;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 300px;
+  max-width: 1140px;
+  margin-left: 99px;
+}
+
+/*make background stylish*/
+/* .overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(241, 235, 235, 0.2);
+} */
+
+/*address text*/
+/* .description {
+    left: 20%;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+} */
+/* #hdr1{
+    color:rgb(243, 180, 8);
+} */
+
+/* #slogan {
+  /* color: rgb(17, 17, 20);
+  font-size: 3rem;
+  font-family: "Bell MT";
+  margin-left: 40%;
+  margin-top: 17%;
+} */
+
+#tellb {
+  font-family: "Bell MT";
+  color: red;
+  margin-left: 47%;
+  margin-top: 2%;
+  font-weight: bolder;
+}
+
+#tellb:hover {
+  /* background-color: red; */
+  color: #fff;
+}
+
+#sectitle {
+  margin: 20px 0;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: tomato;
+}
+
+#subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(28, 32, 80);
+}
+
+/* 
+    .description h3 {
+        color: rgb(6, 1, 20);
+        font-family: 'Bell MT';
+    }
+
+/*sections' Style*/
+/* .features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+} */
+
+/* .feature-title {
+    color: rgb(241, 154, 154);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+} */
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.features .btn:hover {
+  background-color: red;
+  border: 1px solid #333;
+}
+
+#footer {
+  background-color: rgb(15, 5, 70);
+  padding: 20px;
+  color: rgb(213, 235, 155);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  /* margin: 5px 2px; */
+}
+
+.fa:hover {
+  color: rgb(63, 4, 224);
+  font-size: 20px;
+}
+
+#footer ul {
+  display: block;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer ul li a:hover {
+  text-decoration: none;
+  color: rgb(32, 19, 211);
+}
+
+#footer img {
+  height: 150px;
+  width: 150px;
+  border-radius: 7px;
+}
+
+img:hover {
+  opacity: 70%;
+}
+
+/* ==========  */
+.footer {
+  background-color: rgb(4, 83, 156);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font: 1em sans-serif;
+  height: 3em;
+}
+
+#gmap_canvas {
+  margin-top: 30px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+#footer1 {
+  margin-left: 2%;
+}
+
+.logofooter {
+  height: 150px;
+  width: 150px;
+}
+
+.fpage {
+  width: 350px;
+  height: 300px;
+  /* margin-left: 50px; */
+}
+/* media quireies  */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+  }
+  #slogan {
+    display: none;
+  }
+  .fpage {
+    width: 350px;
+    height: 300px;
+    /* margin-left: 50px; */
+  }
+  .description p {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 60px;
+    /* position: absolute; */
+    margin-top: 60%;
+    max-width: 1140px;
+    margin-left: 5%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+  }
+
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 769 px) and (max-width: 991px) {
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .gmap_canvas {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 760px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #slogan {
+    display: none;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mapouter {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+  .description p {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+    font-size: 60px;
+    /* position: absolute; */
+    margin-top: 60%;
+    max-width: 1140px;
+    margin-left: 120%;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mapouter {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+  .gmap_canvas {
+    position: relative;
+    text-align: left;
+    height: 300px;
+    width: 760px;
+  }
+}
+
+#newfooter {
+  bottom: 15%;
+  background-color: #060764;
+  padding: 2%;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .fpage {
+    height: 300px;
+    width: 330px;
+  }
+}
